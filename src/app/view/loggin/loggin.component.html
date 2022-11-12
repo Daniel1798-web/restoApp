@@ -1,6 +1,14 @@
 
 <div class="headerLoggin">
-    <h2>Bienvenido!</h2>
+
+    <div class="homeBack">
+        <img src="assets/icons/home.png" class="homeImg" [routerLink]="['/']">
+    </div>
+
+    <div class="titulo">
+        <h2>Bienvenido!</h2>
+    </div>
+
 </div>
 
 <div class="dadLoggin">
@@ -15,6 +23,11 @@
             <div class="formInput">
                 <span>Password</span><input type="password">
 
+            </div>
+
+            <div class="formButton">
+                <button class="boton" (click)="loggin()">Iniciar Sesión</button>
+                <app-spinner *ngIf="activado"></app-spinner>
             </div>
         </div>
     </div>

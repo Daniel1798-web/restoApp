@@ -55,6 +55,33 @@
     }
 
  
+
+ 
+}
+
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.homeBack{
+    display: flex;
+    justify-content: start;
+    width: 100px;
+
+    .homeImg{
+        width: 50px;
+        height: 50px;
+        transform: translate(10px, 0px);
+        position: absolute;
+        }
+
+        .homeImg:hover{
+            cursor: pointer;
+        }
 }
 
 .formInput{
@@ -72,6 +99,28 @@
         color: rgb(0, 0, 0);
     }
 }
+
+
+.formButton{
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .boton{
+        height: 30px;
+        border-radius: 20px;
+    }
+
+    .boton:hover{
+        background-color: #818181;
+    }
+    
+}
+
 
 
 @media (max-width:800px){

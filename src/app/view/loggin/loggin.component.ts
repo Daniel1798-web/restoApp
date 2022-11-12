@@ -12,4 +12,15 @@ export class LogginComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  activado:boolean = false;
+
+
+  loggin(){
+    this.activado = true 
+
+    setTimeout(()=>{
+      this.activado = false
+    },5000)
+  }
+
 }
